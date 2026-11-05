@@ -16,6 +16,11 @@
 
 ---
 
+## Versión para el celular
+
+Todo el temario está armado como una sola página web, con índice, letra regulable y modo oscuro: <https://claude.ai/artifact/VkTWgc9AEDBf5sWRsUv3nQ> (privada, solo la abre el dueño de la cuenta).
+Si editás los capítulos, regenerala con `python3 herramientas/generar_pagina.py salida.html` (requiere `pip install markdown==3.7`).
+
 ## Cómo usar este temario
 
 1. **Leé primero el capítulo 00.** Ahí está qué te pueden tomar y qué preguntar antes de inscribirte.
