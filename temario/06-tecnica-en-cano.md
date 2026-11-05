@@ -6,36 +6,17 @@ Este es el corazón del temario. Leelo varias veces y volvé a él después de c
 
 ## 1. Pensá el caño como un reloj
 
-```
-                        12            ← PLANO (arriba)
-                   11        1
-               10       ○       2
-  VERTICAL →   9      (caño)     3    ← VERTICAL
-                8               4
-                   7         5
-                         6            ← SOBRECABEZA (abajo)
+![El caño como un reloj: zonas y mitades (5G/6G ascendente)](../figuras/reloj.svg)
 
-  5G / 6G ascendente: se suelda en DOS MITADES, cada una de las 6 a las 12.
-       Mitad 1:  ~6:30 → 6 → 5 → 4 → 3 → 2 → 1 → ~12:30   (empieza y termina pasando el centro)
-       Mitad 2:  la otra mitad, empalmando abajo y arriba sobre los extremos de la mitad 1
-```
+En 5G y 6G ascendente se suelda en **dos mitades**, cada una de abajo hacia arriba:
+
+- **Mitad 1:** arranca pasando un poco el centro de abajo (~6:30), sube por un costado (6 → 5 → 4 → 3 → 2 → 1 → 12) y termina pasando un poco el centro de arriba (~11:30).
+- **Mitad 2:** arranca sobre el inicio amolado de la mitad 1, sube por el otro costado y cierra arriba, montando 10 a 15 mm sobre el final de la mitad 1.
+
+Además:
 
 - En una misma pasada recorrés **sobrecabeza → vertical → plano**. **El ángulo, la velocidad y el latigueo cambian todo el tiempo.** El amperaje queda fijo, así que lo que compensa es la técnica.
 - **Antes de cada pasada, hacé el recorrido en seco** de toda la mitad. Planificá **dónde vas a parar** a cambiar de electrodo o de posición del cuerpo (por ejemplo, a las 4 y a la 1).
-
-### Secuencia de las mitades (vista de frente)
-
-```
-          Mitad 1 termina acá (~12:30) ─┐  ┌─ Mitad 2 cierra sobre la mitad 1
-                                         ▼  ▼   (empalme de 10–15 mm, sobre el extremo amolado)
-                                     ─────────
-                                   /           \
-                     Mitad 2 →    |             |   ← Mitad 1
-                                   \           /
-                                     ─────────
-                                         ▲  ▲
-          Mitad 1 arranca acá (~6:30) ─┘  └─ Mitad 2 arranca sobre ese arranque amolado
-```
 
 **Regla:** después de la mitad 1, **amolá los dos extremos en rampa** (inicio y final) con el disco fino. La mitad 2 tiene que fundir esas rampas por completo. **Los empalmes de las 6 y de las 12 son donde más se desaprueba.**
 
@@ -59,9 +40,16 @@ Este es el corazón del temario. Leelo varias veces y volvé a él después de c
 | **6:30 → 5** | Sobrecabeza | Casi **radial** (perpendicular al caño), con 0–10° apuntando hacia arriba | **Empujá el electrodo dentro de la junta** ("enterrado"). Latigueo mínimo o nulo. Avance continuo | **Concavidad interna** (*suck-back*): la raíz queda hundida por dentro. Se corrige empujando más adentro y con un charco chico y rápido |
 | **5 → 3** | Vertical baja | **5–15° hacia arriba** (empuje) | Latigueo corto (3–5 mm) o un leve vaivén lateral si la luz es grande | Ojo constante. Que se fundan **los dos talones** por igual |
 | **3 → 1** | Vertical alta | 5–15° hacia arriba, pasando gradualmente a perpendicular | Latigueo de 4–6 mm | El calor se acumula: el ojo crece. Más latigueo o más velocidad |
-| **1 → 12:30** | Plano | **Arrastre de 10–20°** (el electrodo se "acuesta" hacia lo soldado) | Latigueo más largo y avance más rápido | **Exceso de penetración y perforación** (la gravedad ayuda a que el metal caiga hacia adentro) |
+| **1 → 11:30** | Plano | **Arrastre de 10–20°** (el electrodo se "acuesta" hacia lo soldado) | Latigueo más largo y avance más rápido | **Exceso de penetración y perforación** (la gravedad ayuda a que el metal caiga hacia adentro) |
+
+![Ángulo del electrodo en la raíz ascendente, por zona](../figuras/electrodo-zonas.svg)
+
+[Ver en YouTube: pase de raíz con 6010 ascendente en tubería](https://www.youtube.com/results?search_query=pase+de+ra%C3%ADz+6010+tuber%C3%ADa+ascendente)
+[Ver en YouTube (inglés): 6010 uphill root](https://www.youtube.com/results?search_query=6010+uphill+root+pipe+keyhole)
 
 ### El ojo y el sonido
+
+![El ojo de cerradura: qué tenés que ver](../figuras/keyhole.svg)
 
 - **Tamaño del ojo:** de 1 a 1,5 veces el diámetro del electrodo, **constante en toda la vuelta**.
 - **Sonido:** un **soplido o chisporroteo** constante del lado de adentro significa que penetra. Si el sonido se vuelve un zumbido sordo, el arco está "arriba" del talón y no pasa.
@@ -105,6 +93,9 @@ En **gasoductos y oleoductos** la raíz y muchas veces todo el cupón se hace **
 
 **Claves:** velocidad constante y el electrodo empujado contra la junta. En la parte baja (4 → 6 y 8 → 6) poné el electrodo **más perpendicular** para que el arco empuje contra la gravedad.
 
+[Ver en YouTube: raíz descendente con 6010 en ducto](https://www.youtube.com/results?search_query=soldadura+descendente+6010+ra%C3%ADz+gasoducto)
+[Ver en YouTube (inglés): 6010 downhill pipeline root](https://www.youtube.com/results?search_query=6010+downhill+pipeline+root+pass)
+
 ---
 
 ## 4. Limpieza y amolado de la raíz
@@ -129,6 +120,8 @@ En **gasoductos y oleoductos** la raíz y muchas veces todo el cupón se hace **
 | E6010 de 3,2 mm | 95–115 A | Ascendente, **más rápido que la raíz**, con un leve vaivén que toque ambas paredes y **funda las vías** |
 | E7018 de 2,5 mm | 75–85 A | Ascendente, tejido corto, arco corto. Más "suave" con raíces finas |
 
+[Ver en YouTube (inglés): hot pass with 6010](https://www.youtube.com/results?search_query=hot+pass+6010+pipe)
+
 ---
 
 ## 6. Relleno con E7018 ascendente
@@ -140,6 +133,8 @@ En **gasoductos y oleoductos** la raíz y muchas veces todo el cupón se hace **
 | 4" Sch 80 (8,56 mm) | Raíz + (caliente) + 1–2 rellenos + presentación |
 | 6" Sch 80 (10,97 mm) | Raíz + caliente + 2–3 rellenos + presentación |
 | 6" Sch 120 / 8" Sch 80 | Raíz + caliente + 3–4 rellenos (en las capas anchas, a veces 2 cordones por capa) + presentación |
+
+![Secuencia de pasadas en un caño 6" Sch 80](../figuras/pasadas.svg)
 
 ### Técnica
 
@@ -156,6 +151,8 @@ En **gasoductos y oleoductos** la raíz y muchas veces todo el cupón se hace **
 
 Encendé 10–15 mm adelante, dentro de la junta, **volvé** hasta el cráter anterior, solapá unos 5 mm y seguí. Si el cráter anterior tiene escoria o un pozo, **amolalo** antes de reiniciar.
 
+[Ver en YouTube: relleno con 7018 en tubería](https://www.youtube.com/results?search_query=relleno+7018+tuber%C3%ADa+ascendente)
+
 ---
 
 ## 7. Presentación (*cap*)
@@ -166,6 +163,8 @@ Encendé 10–15 mm adelante, dentro de la junta, **volvé** hasta el cráter an
 - **Pausa en los pies del cordón** para que no quede **socavación** (es el defecto visual más común de la presentación).
 - Aguas parejas y sin escalones en los empalmes.
 - **No la amoles** si el examen no lo permite.
+
+[Ver en YouTube: presentación con 7018 en tubería](https://www.youtube.com/results?search_query=presentaci%C3%B3n+7018+tuber%C3%ADa+6G)
 
 ---
 
@@ -185,6 +184,8 @@ Encendé 10–15 mm adelante, dentro de la junta, **volvé** hasta el cráter an
 - **Último cordón de la presentación** (arriba): un poco más rápido, con el electrodo levemente más horizontal, para **no socavar el pie superior**.
 - Presentación típica en un 6" Sch 80: de 3 a 5 cordones.
 
+[Ver en YouTube: tubería 2G con 6010 y 7018](https://www.youtube.com/results?search_query=soldadura+tuber%C3%ADa+2G+6010+7018)
+
 ---
 
 ## 9. Posición 5G (eje horizontal, fijo)
@@ -198,6 +199,8 @@ Encendé 10–15 mm adelante, dentro de la junta, **volvé** hasta el cráter an
   - Empezá abajo **sentado o arrodillado** (con rodilleras), con la cabeza a un costado del caño, fuera del humo.
   - Cambiá de posición en una **parada planificada**, alrededor de las 3–4.
 - **Mano no hábil:** del lado izquierdo del caño (si sos diestro) vas a tener una postura incómoda. **Aprender a soldar con la mano izquierda** en caño es una ventaja enorme. Empezá con relleno en placa vertical.
+
+[Ver en YouTube: tubería 5G con 6010 y 7018](https://www.youtube.com/results?search_query=soldadura+tuber%C3%ADa+5G+6010+7018)
 
 ---
 
@@ -225,6 +228,9 @@ Muchos soldadores **tejen los rellenos y hacen la presentación con cordones api
 - La parte de abajo del lado "bajo" del caño es la zona más incómoda: tenés que meterte por debajo. **Practicá las dos mitades con recorridos en seco** hasta encontrar una postura estable.
 - Si te toman **6GR** (D1.1, uniones tubulares T-Y-K), hay un **anillo restrictor** que te limita el acceso del lado alto. Practicá con una chapa soldada como obstáculo, a unos 12 mm del bisel ⚠️ (las medidas exactas están en la figura del código).
 
+[Ver en YouTube: prueba 6G con 6010 y 7018](https://www.youtube.com/results?search_query=prueba+6G+6010+7018)
+[Ver: guía de pruebas 6G de Welding Tips and Tricks (inglés)](https://weldingtipsandtricks.com/6g-weld-tests.html)
+
 ---
 
 ## 11. Caño chico (2")
@@ -249,6 +255,8 @@ En caño con corriente continua es frecuente que el arco **"se desvíe"** hacia 
 4. Soldá **hacia un punto de armado grueso** o hacia la zona ya soldada.
 5. **Enrollá el cable de masa** unas vueltas alrededor del caño para contrarrestar el campo magnético.
 6. En casos graves: desmagnetizar el caño, o usar AC (pero el **6010 no corre en AC**).
+
+[Ver en YouTube: soplo magnético](https://www.youtube.com/results?search_query=soplo+magn%C3%A9tico+soldadura+arc+blow)
 
 ---
 

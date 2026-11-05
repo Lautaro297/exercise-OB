@@ -15,7 +15,13 @@ from pathlib import Path
 
 import markdown
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from generar_figuras import STYLE as ESTILO_FIGURAS  # noqa: E402
+
 RAIZ = Path(__file__).resolve().parent.parent
+FIGURAS = RAIZ / "figuras"
+VIDEOS_POR_DEFECTO = {"T8ZGl5iK-JA": "cap-06"}  # el único video cuyo tema pude confirmar
+_figuras_insertadas = 0
 EXTENSIONES = ["tables", "fenced_code", "md_in_html", "sane_lists"]
 
 AVISO = "⚠️?"  # ⚠️ con o sin selector de variante
@@ -23,6 +29,7 @@ ETIQUETAS = {
     "\U0001F4A1": ("tip", "Dato"),         # 💡
     "\U0001F4CC": ("tip", "Importante"),   # 📌
     "✅": ("ok", "Control"),           # ✅
+    "\U0001F4C4": ("pdf", "En tus PDF"),   # 📄
 }
 
 
@@ -35,12 +42,26 @@ def texto_plano(fragmento: str) -> str:
     return html.unescape(re.sub(r"<[^>]+>", "", fragmento)).strip()
 
 
+def figura(m: re.Match) -> str:
+    """Reemplaza una imagen de figuras/ por el SVG en línea, con id únicos."""
+    global _figuras_insertadas
+    _figuras_insertadas += 1
+    alt, nombre = html.unescape(m.group(1)), m.group(2)
+    svg = (FIGURAS / f"{nombre}.svg").read_text(encoding="utf-8")
+    svg = re.sub(r"<style>.*?</style>", "", svg, flags=re.S).replace("FIGID", f"fig{_figuras_insertadas}")
+    return f'<figure class="fig">{svg.strip()}<figcaption>{html.escape(alt)}</figcaption></figure>'
+
+
 def pulir(cuerpo: str, cid: str) -> tuple[str, list[tuple[str, str]]]:
-    """Ajusta el HTML generado: enlaces, tablas, diagramas, avisos y listas tildables."""
+    """Ajusta el HTML generado: figuras, enlaces, tablas, diagramas, avisos y listas tildables."""
+    cuerpo = re.sub(r'<p><img alt="([^"]*)" src="\.\./figuras/([\w-]+)\.svg" ?/?></p>', figura, cuerpo)
     # Enlaces entre capítulos -> rutas internas de la página.
     cuerpo = re.sub(r'href="(?:temario/)?(\d\d)-[^"]+\.md"', r'href="#cap-\1"', cuerpo)
     # Enlaces externos en pestaña nueva.
     cuerpo = re.sub(r'<a href="(https?://[^"]+)"', r'<a href="\1" target="_blank" rel="noopener"', cuerpo)
+    # Enlaces "Ver en YouTube: ..." como botones.
+    cuerpo = re.sub(r'(<a href="[^"]+" target="_blank" rel="noopener")>(Ver[ :])', r'\1 class="vid">\2', cuerpo)
+    cuerpo = re.sub(r'<p>(?=<a href="[^"]+" target="_blank" rel="noopener" class="vid">)', '<p class="vids">', cuerpo)
     # Tablas y diagramas con desplazamiento horizontal propio.
     cuerpo = cuerpo.replace("<table>", '<div class="tbl"><table>').replace("</table>", "</table></div>")
     cuerpo = cuerpo.replace("<pre><code>", '<div class="pre"><pre><code>').replace("</code></pre>", "</code></pre></div>")
@@ -57,13 +78,15 @@ def pulir(cuerpo: str, cid: str) -> tuple[str, list[tuple[str, str]]]:
     patron_emoji = "|".join(re.escape(k) for k in ETIQUETAS) + "|" + AVISO
     cuerpo = re.sub(rf"<blockquote>\s*<p>({patron_emoji})\s*", recuadro, cuerpo)
     cuerpo = cuerpo.replace("<blockquote>", '<blockquote class="callout">')
+    cuerpo = cuerpo.replace('<p class="callout-label">En tus PDF</p><p><strong>En tus PDF:</strong> ',
+                            '<p class="callout-label">En tus PDF</p><p>')
 
     # Marcas ⚠️ dentro del texto -> etiqueta "verificar".
     chip = '<span class="verify" title="Verificar contra la WPS o la edición vigente del código">verificar</span>'
     cuerpo = re.sub(rf"{AVISO}\s?[Vv]erificar\b", chip, cuerpo)
     cuerpo = re.sub(AVISO, chip, cuerpo)
     # Emojis que quedaron sueltos (dentro de recuadros ya etiquetados o en listas).
-    cuerpo = re.sub("(?:\U0001F449|\U0001F4A1|\U0001F4CC|✅) ", "", cuerpo)
+    cuerpo = re.sub("(?:\U0001F449|\U0001F4A1|\U0001F4CC|\U0001F4C4|✅) ", "", cuerpo)
 
     # Listas de tareas "- [ ]" -> casillas tildables.
     contador = iter(range(1, 10_000))
@@ -121,6 +144,26 @@ def armar_capitulos(resumen):
     return capitulos
 
 
+def videoteca(cuerpo: str, capitulos) -> str:
+    """Convierte la lista marcada con <!-- tus-videos --> en tarjetas con selector de capítulo."""
+    m = re.search(r"<!-- tus-videos -->\s*<ul>(.*?)</ul>", cuerpo, flags=re.S)
+    if not m:
+        return cuerpo
+    opciones = '<option value="">Sin asignar</option>' + "".join(
+        f'<option value="{c["cid"]}">{c["num"]} · {html.escape(c["corto"])}</option>' for c in capitulos)
+    tarjetas = []
+    for url, texto in re.findall(r'<li><a href="([^"]+)"[^>]*>(.*?)</a></li>', m.group(1)):
+        vid = url.rstrip("/").rsplit("/", 1)[-1]
+        defecto = VIDEOS_POR_DEFECTO.get(vid, "")
+        tarjetas.append(
+            f'<div class="vcard"><a class="vlink" href="{url}" target="_blank" rel="noopener">{texto}</a>'
+            f'<label class="vsel" for="video-{vid}">Capítulo para {texto}</label>'
+            f'<select id="video-{vid}" data-video="{vid}" data-default="{defecto}">{opciones}</select></div>')
+    bloque = ('<div class="videoteca">' + "".join(tarjetas) + "</div>"
+              '<p class="vnote">La asignación queda guardada solo en este celular o navegador.</p>')
+    return cuerpo[:m.start()] + bloque + cuerpo[m.end():]
+
+
 def vista_capitulo(cap, anterior, siguiente) -> str:
     toc = "".join(
         f'<li><button type="button" data-target="{sid}">{html.escape(nombre)}</button></li>'
@@ -144,6 +187,10 @@ def vista_capitulo(cap, anterior, siguiente) -> str:
   </header>
   {toc_html}
   <div class="prose">{cap['cuerpo']}</div>
+  <section class="mis-videos" data-cap="{cap['cid']}" hidden>
+    <h2>Tus videos para este capítulo</h2>
+    <p class="vids mv-list"></p>
+  </section>
   <nav class="pager" aria-label="Navegación entre capítulos">
     {enlace(anterior, "Anterior", "prev")}
     {enlace(siguiente, "Siguiente", "next")}
@@ -208,6 +255,7 @@ ESTILOS = """
   --accent: #1d5a86; --accent-ink: #ffffff; --heat: #94500e; --heat-bg: #f7ebdc; --heat-line: #e2c4a0;
   --tip-bg: #e6eff6; --tip-line: #bdd2e4; --ok-bg: #e7f2ea; --ok-line: #b9d8c1; --ok: #2b6b3d;
   --code-bg: #e4e9ed; --row: #f4f6f8;
+  --fig-bg: #ffffff; --metal: #cdd5dc; --weld: #f1cf9f; --weld2: #e6b07a; --weld3: #d69356;
   --font-display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", system-ui, sans-serif;
   --font-body: "Source Sans 3", "Segoe UI", Roboto, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
@@ -221,6 +269,7 @@ ESTILOS = """
     --accent: #84b8df; --accent-ink: #0c1822; --heat: #e6a865; --heat-bg: #2a2016; --heat-line: #5b4229;
     --tip-bg: #16232f; --tip-line: #29435b; --ok-bg: #15251a; --ok-line: #2c4c35; --ok: #8fcf9f;
     --code-bg: #0c1115; --row: #1d262f;
+    --fig-bg: #182028; --metal: #3f4b57; --weld: #7d5631; --weld2: #966639; --weld3: #ad7742;
     color-scheme: dark;
   }
 }
@@ -229,6 +278,7 @@ ESTILOS = """
   --accent: #84b8df; --accent-ink: #0c1822; --heat: #e6a865; --heat-bg: #2a2016; --heat-line: #5b4229;
   --tip-bg: #16232f; --tip-line: #29435b; --ok-bg: #15251a; --ok-line: #2c4c35; --ok: #8fcf9f;
   --code-bg: #0c1115; --row: #1d262f;
+  --fig-bg: #182028; --metal: #3f4b57; --weld: #7d5631; --weld2: #966639; --weld3: #ad7742;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -340,6 +390,26 @@ ol.chapters a { display: grid; grid-template-columns: 2.6em 1fr; column-gap: .7e
 ol.chapters .num { grid-row: span 2; font: 700 1.7em/1 var(--font-display); color: var(--accent); }
 ol.chapters .t { font-weight: 700; }
 ol.chapters .d { color: var(--muted); font-size: .9em; line-height: 1.4; }
+/* Figuras */
+figure.fig { margin: 1.3em 0 1.5em; max-width: 34rem; }
+figure.fig svg { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 10px; }
+figure.fig figcaption { margin-top: .45em; font-size: .85em; color: var(--muted); }
+/* Botones de video */
+p.vids { display: flex; flex-wrap: wrap; gap: 8px; margin: 1em 0 1.3em; }
+a.vid { display: inline-flex; align-items: center; gap: .5em; min-height: 40px; padding: .35em .85em; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink); text-decoration: none; font-size: .88em; font-weight: 600; line-height: 1.25; }
+a.vid::before { content: ""; flex: none; width: 0; height: 0; border-style: solid; border-width: .38em 0 .38em .62em; border-color: transparent transparent transparent var(--heat); }
+a.vid:hover { border-color: var(--accent); color: var(--accent); }
+.callout.pdf { background: var(--surface); border-color: var(--line); }
+.callout.pdf .callout-label { color: var(--muted); }
+/* Videoteca */
+.videoteca { display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); gap: 8px; margin: 1em 0 .6em; }
+.vcard { display: grid; grid-template-columns: minmax(5.5em, auto) 1fr; align-items: center; gap: .6em; padding: .5em .7em; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); min-width: 0; }
+.vlink { display: inline-flex; align-items: center; gap: .45em; font-weight: 700; text-decoration: none; overflow-wrap: anywhere; min-height: 40px; }
+.vlink::before { content: ""; flex: none; width: 0; height: 0; border-style: solid; border-width: .38em 0 .38em .62em; border-color: transparent transparent transparent var(--heat); }
+.vsel { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.vcard select { width: 100%; min-height: 40px; font: inherit; font-size: .9em; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 0 .5em; }
+.vnote { font-size: .85em; color: var(--muted); }
+.mis-videos h2 { font-size: 1.3em; }
 footer.foot { margin-top: 3em; color: var(--muted); font-size: .85em; }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
 """
@@ -417,6 +487,35 @@ SCRIPT = """
   document.getElementById('fs-down').addEventListener('click', function () { fs = Math.max(14, fs - 1); guardar('temario:fs', fs); aplicarLetra(); });
   document.getElementById('fs-up').addEventListener('click', function () { fs = Math.min(24, fs + 1); guardar('temario:fs', fs); aplicarLetra(); });
 
+  var selectores = Array.prototype.slice.call(document.querySelectorAll('.videoteca select'));
+  function refrescarVideos() {
+    document.querySelectorAll('.mis-videos').forEach(function (sec) {
+      var lista = sec.querySelector('.mv-list');
+      lista.textContent = '';
+      selectores.forEach(function (sel) {
+        if (sel.value !== sec.getAttribute('data-cap')) return;
+        var orig = sel.parentNode.querySelector('.vlink');
+        var a = document.createElement('a');
+        a.className = 'vid';
+        a.href = orig.href;
+        a.target = '_blank';
+        a.rel = 'noopener';
+        a.textContent = orig.textContent;
+        lista.appendChild(a);
+      });
+      sec.hidden = !lista.children.length;
+    });
+  }
+  selectores.forEach(function (sel) {
+    var guardado = leer('temario:video:' + sel.getAttribute('data-video'));
+    sel.value = guardado !== null ? guardado : (sel.getAttribute('data-default') || '');
+    sel.addEventListener('change', function () {
+      guardar('temario:video:' + sel.getAttribute('data-video'), sel.value);
+      refrescarVideos();
+    });
+  });
+  refrescarVideos();
+
   window.addEventListener('hashchange', mostrar);
   window.addEventListener('resize', function () {
     var visible = views.filter(function (v) { return !v.hidden; })[0];
@@ -432,6 +531,8 @@ def main():
     salida = Path(sys.argv[1] if len(sys.argv) > 1 else "temario.html")
     resumen, bloques, intro = leer_readme()
     capitulos = armar_capitulos(resumen)
+    for cap in capitulos:
+        cap["cuerpo"] = videoteca(cap["cuerpo"], capitulos)
     vistas = [vista_inicio(capitulos, bloques, intro)]
     for i, cap in enumerate(capitulos):
         anterior = capitulos[i - 1] if i > 0 else None
@@ -443,7 +544,7 @@ def main():
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=JetBrains+Mono:wght@500;600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
-<style>{ESTILOS}</style>
+<style>{ESTILOS}{ESTILO_FIGURAS.replace("<style>", "").replace("</style>", "")}</style>
 <header class="bar">
   <button type="button" id="btn-indice" aria-label="Ir al índice de capítulos">Índice</button>
   <div class="bar-title" id="bar-title" aria-live="polite">Temario SMAW</div>

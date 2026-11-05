@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 286" role="img" aria-labelledby="FIGID-t"><title id="FIGID-t">Ensayo de doblado guiado y tipos de probeta</title><style>
+.f-bg{fill:var(--fig-bg,#ffffff)}
+.f-ln{fill:none;stroke:var(--ink,#18212a);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.f-dash{fill:none;stroke:var(--muted,#56636f);stroke-width:1;stroke-dasharray:4 3}
+.f-rip{fill:none;stroke:var(--muted,#56636f);stroke-width:.8}
+.f-mt{fill:var(--metal,#cdd5dc);stroke:var(--ink,#18212a);stroke-width:1.2;stroke-linejoin:round}
+.f-wd{fill:var(--weld,#f1cf9f);stroke:var(--ink,#18212a);stroke-width:1;stroke-linejoin:round}
+.f-wd2{fill:var(--weld2,#e6b07a);stroke:var(--ink,#18212a);stroke-width:1;stroke-linejoin:round}
+.f-wd3{fill:var(--weld3,#d69356);stroke:var(--ink,#18212a);stroke-width:1;stroke-linejoin:round}
+.f-hole{fill:var(--fig-bg,#ffffff);stroke:var(--ink,#18212a);stroke-width:1.2}
+.f-holeh{fill:var(--fig-bg,#ffffff);stroke:var(--heat,#94500e);stroke-width:2}
+.f-pore{fill:var(--fig-bg,#ffffff);stroke:var(--heat,#94500e);stroke-width:1.6}
+.f-ac{fill:none;stroke:var(--accent,#1d5a86);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.f-ht{fill:none;stroke:var(--heat,#94500e);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.f-defl{fill:none;stroke:var(--heat,#94500e);stroke-width:3;stroke-linecap:round}
+.f-defbox{fill:none;stroke:var(--heat,#94500e);stroke-width:1.8;stroke-dasharray:3 2}
+.f-tack{fill:none;stroke:var(--heat,#94500e);stroke-width:12}
+.f-zp{fill:none;stroke:var(--accent,#1d5a86);stroke-width:7}
+.f-zv{fill:none;stroke:var(--muted,#56636f);stroke-width:7}
+.f-zs{fill:none;stroke:var(--heat,#94500e);stroke-width:7}
+.f-sp{fill:none;stroke:var(--weld2,#e6b07a);stroke-width:10}
+.f-spw{fill:none;stroke:var(--heat,#94500e);stroke-width:10}
+.f-spm{fill:none;stroke:var(--weld2,#e6b07a);stroke-width:6}
+.f-el{fill:none;stroke:var(--ink,#18212a);stroke-width:5;stroke-linecap:round}
+.f-elt{fill:none;stroke:var(--heat,#94500e);stroke-width:5;stroke-linecap:round}
+.f-inkf{fill:var(--ink,#18212a)}
+.f-acf{fill:var(--accent,#1d5a86)}
+.f-htf{fill:var(--heat,#94500e)}
+.f-tx{fill:var(--ink,#18212a);font-family:var(--font-body,system-ui,sans-serif);font-size:12px;font-weight:600}
+.f-sm{fill:var(--muted,#56636f);font-family:var(--font-body,system-ui,sans-serif);font-size:11px}
+.f-hd{fill:var(--ink,#18212a);font-family:var(--font-display,system-ui,sans-serif);font-size:15px;font-weight:700;letter-spacing:.06em}
+.f-ach{fill:var(--accent,#1d5a86);font-family:var(--font-display,system-ui,sans-serif);font-size:13px;font-weight:700;letter-spacing:.05em}
+.f-hth{fill:var(--heat,#94500e);font-family:var(--font-display,system-ui,sans-serif);font-size:13px;font-weight:700;letter-spacing:.05em}
+</style><defs><marker id="FIGID-ak" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="f-inkf"/></marker><marker id="FIGID-aa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="f-acf"/></marker><marker id="FIGID-ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="f-htf"/></marker></defs><rect class="f-bg" x="0" y="0" width="360" height="286" rx="10"/><path d="M80 30 L120 30 L120 104 A20 20 0 0 1 80 104 Z" class="f-mt" /><path d="M75 44 L75 104 A25 25 0 0 0 125 104 L125 44" class="f-sp" /><path d="M91.4 127.5 A25 25 0 0 0 108.6 127.5" class="f-spw" /><circle cx="58" cy="96" r="12" class="f-mt"/><circle cx="142" cy="96" r="12" class="f-mt"/><text x="126" y="22" class="f-tx" text-anchor="start">émbolo Ø 38 mm (4 × t)</text><text x="50" y="126" class="f-sm" text-anchor="middle">rodillo</text><line x1="148" y1="77" x2="131" y2="70" class="f-dash" /><text x="150" y="80" class="f-sm" text-anchor="start">probeta</text><line x1="70" y1="152" x2="130" y2="152" class="f-ac" /><line x1="70" y1="146" x2="70" y2="158" class="f-ac" /><line x1="130" y1="146" x2="130" y2="158" class="f-ac" /><text x="100" y="170" class="f-tx" text-anchor="middle">abertura ≈ 60 mm</text><text x="100" y="188" class="f-sm" text-anchor="middle">zona soldada (afuera = estirada)</text><path d="M210 48 L210 70 A12 12 0 0 0 234 70 L234 48" class="f-spm" /><path d="M206.5 70 A15.5 15.5 0 0 0 237.5 70" class="f-ht" /><text x="248" y="60" class="f-tx" text-anchor="start">Cara</text><text x="248" y="75" class="f-sm" text-anchor="start">la presentación</text><text x="248" y="89" class="f-sm" text-anchor="start">queda afuera</text><path d="M210 110 L210 132 A12 12 0 0 0 234 132 L234 110" class="f-spm" /><path d="M206.5 132 A15.5 15.5 0 0 0 237.5 132" class="f-ht" /><text x="248" y="122" class="f-tx" text-anchor="start">Raíz</text><text x="248" y="137" class="f-sm" text-anchor="start">la raíz</text><text x="248" y="151" class="f-sm" text-anchor="start">queda afuera</text><path d="M210 172 L210 194 A12 12 0 0 0 234 194 L234 172" class="f-spm" /><path d="M206.5 194 A15.5 15.5 0 0 0 237.5 194" class="f-ht" /><text x="248" y="184" class="f-tx" text-anchor="start">Lateral</text><text x="248" y="199" class="f-sm" text-anchor="start">rebanada de 10 mm,</text><text x="248" y="213" class="f-sm" text-anchor="start">se dobla de costado</text><text x="180" y="258" class="f-sm" text-anchor="middle">La probeta puede saltar: poné una pantalla</text><text x="180" y="273" class="f-sm" text-anchor="middle">delante y no te pares en su línea.</text></svg>

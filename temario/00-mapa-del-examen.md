@@ -31,27 +31,17 @@ Antes de quemar un solo electrodo tenés que saber **contra qué regla te van a 
 
 ## 3. Posiciones
 
-```
- PLACA (ranura "G" / filete "F")
+![Posiciones de soldadura en placa y en caño](../figuras/posiciones.svg)
 
-  1G / 1F  Plana           ════════      (soldás de arriba hacia abajo)
-  2G / 2F  Horizontal      placa vertical, cordón horizontal
-  3G / 3F  Vertical        placa vertical, cordón vertical (ascendente o descendente)
-  4G / 4F  Sobrecabeza     soldás por debajo de la pieza
-
- CAÑO
-
-  1G   Eje horizontal, caño ROTANDO   (soldás siempre arriba, en plano)
-  2G   Eje VERTICAL, caño fijo        (cordones horizontales alrededor)
-  5G   Eje HORIZONTAL, caño fijo      (de abajo: sobrecabeza → vertical → plano)
-  6G   Eje a 45°, caño fijo           (combina todo: la prueba "reina")
-  6GR  6G + anillo restrictor         (AWS D1.1, para uniones tubulares T-Y-K)
-
-         2G                 5G                  6G
-         ║                ═════               ╱
-         ║  ← eje         eje horizontal     ╱  eje a 45° ± 5°
-         ║                                  ╱
-```
+| Posición | Placa | Caño |
+|---|---|---|
+| **1G / 1F** | Plana: soldás desde arriba | Eje horizontal: el caño **gira** y soldás siempre arriba |
+| **2G / 2F** | Horizontal: placa vertical, cordón horizontal | Eje **vertical**, caño fijo: cordones horizontales alrededor |
+| **3G / 3F** | Vertical (ascendente o descendente) | – |
+| **4G / 4F** | Sobrecabeza: soldás por debajo | – |
+| **5G** | – | Eje **horizontal**, caño fijo: de abajo (sobrecabeza) hasta arriba (plano) |
+| **6G** | – | Eje a **45°**, caño fijo: combina todo. Es la prueba "reina" |
+| **6GR** | – | 6G con anillo restrictor (AWS D1.1, uniones tubulares T-Y-K) |
 
 **Qué te habilita cada prueba (resumen):**
 
@@ -59,6 +49,10 @@ Antes de quemar un solo electrodo tenés que saber **contra qué regla te van a 
 - En **ASME IX**, aprobar **2G + 5G** por separado equivale a 6G.
 - En placa, **3G + 4G** es la combinación clásica de D1.1 para estructuras en todas las posiciones.
 - ⚠️ Las tablas exactas son ASME QW-461.9 y la tabla de posiciones calificadas de D1.1 (Tabla 6.10 en la edición 2020; la numeración puede cambiar en 2025).
+
+> 📄 **En tus PDF:** curso M381, págs. 21 a 26: posiciones en placa, en filete y en caño, con dibujos (en inglés).
+
+[Ver en YouTube: posiciones de soldadura 1G a 6G](https://www.youtube.com/results?search_query=posiciones+de+soldadura+1G+2G+3G+4G+5G+6G)
 
 ---
 
@@ -110,6 +104,8 @@ Criterios típicos para la prueba de soldador en **AWS D1.1** (cláusula 6, Part
 - Posición mal armada (por ejemplo, 6G que no está a 45° ± 5°).
 
 ### Paso 2: ensayos
+
+> 📄 **En tus PDF:** curso M381, págs. 37 a 44: cómo se inspecciona una soldadura (visual, tintas penetrantes, partículas magnéticas, radiografía y ultrasonido).
 
 | Ensayo | Qué es | Cuántas probetas (5G/6G) | Criterio de aceptación |
 |---|---|---|---|

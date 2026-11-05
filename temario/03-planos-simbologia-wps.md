@@ -6,34 +6,17 @@ En obra, el soldador de cañerías tiene que leer el **símbolo de soldadura**, 
 
 ## 1. Tipos de junta
 
-```
- A tope (butt)          En T (tee)            En esquina (corner)     Solapada (lap)        De borde (edge)
- ═════╗ ╔═════              ║                 ╔══════                ══════════             ══════════
-      ║ ║                   ║                 ║                         ══════════          ══════════
-                       ═════╩═════            ║
-```
+![Los cinco tipos de junta](../figuras/tipos-junta.svg)
 
 En cañería, el 90 % de lo que vas a soldar son **juntas a tope** (caño con caño, caño con accesorio o con brida de cuello). Le siguen las **juntas en T con filete**: bridas *slip-on*, *socket weld* y derivaciones.
 
+> 📄 **En tus PDF:** en el póster *Welded Joints and Symbols*, el recuadro «Basic Types of Welded Joints» muestra los cinco tipos en 3D, con el lado flecha y el otro lado. En el curso M381, págs. 9 a 16: tipos de junta y de ranura.
+
 ## 2. Partes de una junta biselada (vocabulario obligatorio)
 
-```
-                    |<----- ancho de la presentación ----->|
-                     _______________________________________     ← sobremonta (refuerzo de cara) ≤ 3 mm
-   ─────────────────┐            pasada de                 ┌─────────────────   superficie exterior
-                     \           presentación             /
-     pieza A          \     rellenos                     /          pieza B
-   (pared t)           \                                /
-                        \      pase caliente           /     ← cara del bisel
-                         │                             │     ← talón (cara de raíz) 1,6 mm
-   ──────────────────────┘          raíz               └──────────────────────   superficie interior
-                          |<- luz (abertura de raíz) ->|
-                                 2,4 – 3,2 mm               ▲ penetración de raíz (≤ 3 mm hacia adentro)
+![Junta en V preparada: bisel, talón y luz](../figuras/junta.svg)
 
-   Ángulo de bisel = 37,5° (en cada pieza)     Ángulo de ranura (incluido) = 75° (la suma de los dos)
-   Pie del cordón = línea donde la soldadura se une con el metal base (ahí nace la socavación)
-   (Dibujo NO a escala: la luz real es mucho más chica que la boca del bisel)
-```
+![La misma junta soldada: pasadas, sobremonta y penetración](../figuras/pasadas.svg)
 
 | Término | Inglés | Valor típico en caño |
 |---|---|---|
@@ -50,16 +33,7 @@ En cañería, el 90 % de lo que vas a soldar son **juntas a tope** (caño con ca
 
 ### Estructura
 
-```
-                           (OTRO LADO: lo que se dibuja ARRIBA de la línea)
-                 ●  ← círculo = soldar "todo alrededor"
-                 ⚑  ← bandera = soldadura "en obra" (de campo)
-                 │
-   ──────────────┼────────────────────────────────────  <   COLA: proceso, WPS, notas
-                /│          (LADO FLECHA: lo que se dibuja ABAJO de la línea)       (ej.: SMAW · WPS-01)
-               /
-              ↙  FLECHA: toca la junta
-```
+![Cómo se lee el símbolo de soldadura AWS](../figuras/simbolo.svg)
 
 **La regla más importante:**
 
@@ -93,17 +67,15 @@ En cañería, el 90 % de lo que vas a soldar son **juntas a tope** (caño con ca
 | ─ / ⌒ / ‿ sobre el símbolo | **Contorno**: al ras, convexo o cóncavo |
 | Letra junto al contorno | **Terminación**: G = amolado, M = mecanizado, C = cincelado, H = martillado, R = laminado, P = planchado, U = sin especificar |
 
+> 📄 **En tus PDF:** en el póster, «Basic Welding Symbols and Their Location Significance» muestra cada símbolo del lado flecha, del otro lado y de ambos lados, junto al corte de la soldadura. «Supplementary Welding Symbols» tiene los suplementarios, y «Standard Location of the Elements of the Welding Symbol», dónde va cada medida. En el curso M381, págs. 26 a 31.
+
 ### Dónde va cada dimensión
 
-```
- FILETE:          tamaño  ◺  largo – paso                      Ej.:  6 ◺ 50-150
-                                                                    = filete de 6 mm de cateto,
-                                                                      tramos de 50 mm cada 150 mm entre centros
+![Ejemplos de símbolos de soldadura](../figuras/simbolo-ejemplos.svg)
 
- RANURA:   profundidad(garganta)  V  ← la luz va DENTRO del símbolo, el ángulo AFUERA del símbolo
-                                                                Ej.:  10 (10)  con 75° y luz 3 adentro de la V
-                                                                    = bisel de 10 mm de profundidad,
-                                                                      garganta efectiva 10 mm, ranura de 75°, luz 3 mm
+```
+ FILETE:   tamaño  ◺  largo-paso           Ej.:  6 ◺ 50-150  = filete de 6 mm, tramos de 50 mm cada 150 mm
+ RANURA:   profundidad (garganta)  V       La luz va DENTRO del símbolo y el ángulo AFUERA
 ```
 
 - **Profundidad del bisel (S)** a la izquierda. La **garganta efectiva (E)** va entre paréntesis: `S (E)`.
@@ -121,6 +93,8 @@ En cañería, el 90 % de lo que vas a soldar son **juntas a tope** (caño con ca
 | Proceso | Sigla (SMAW) | Número: **111 = electrodo revestido**, 141 = TIG, 135 = MAG |
 
 > ⚠️ **Trampa clásica:** un filete "a5" en ISO tiene unos **7 mm de cateto** (cateto ≈ garganta × 1,41). Si lo hacés de 5 mm de pierna, queda chico y lo rechazan.
+
+[Ver en YouTube: simbología de soldadura AWS](https://www.youtube.com/results?search_query=simbolog%C3%ADa+de+soldadura+AWS+A2.4)
 
 ---
 
@@ -158,6 +132,8 @@ Elementos que tenés que reconocer:
 - **Bridas** `‖`, **válvulas** `⋈`, **reducciones** (trapecio), **codos** (curva o vértice) y **tees**.
 - **Flecha de Norte** de planta, **cotas** de eje (EL +3.500) y **número de línea** (diámetro, servicio, especificación del material, por ejemplo `6"-P-1001-A1A`).
 - **Lista de materiales (BOM):** diámetro, schedule, norma del caño (A106 Gr. B) y de los accesorios (A234 WPB).
+
+[Ver en YouTube: cómo leer un isométrico de tubería](https://www.youtube.com/results?search_query=c%C3%B3mo+leer+un+isom%C3%A9trico+de+tuber%C3%ADa)
 
 ### Dimensiones de caños que vas a usar (ASME B36.10)
 
@@ -199,6 +175,10 @@ Elementos que tenés que reconocer:
 ## 6. Cómo leer una WPS
 
 La **WPS** (*Welding Procedure Specification*) es la "receta" calificada que tenés que seguir. Está respaldada por un **PQR** (*Procedure Qualification Record*), que es el registro del ensayo que demostró que la receta funciona.
+
+> 📄 **En tus PDF:** curso M381, págs. 60 a 66: ejemplos de formularios de WPS y PQR (en inglés).
+
+[Ver en YouTube: qué es una WPS](https://www.youtube.com/results?search_query=qu%C3%A9+es+una+WPS+procedimiento+de+soldadura)
 
 ### Campos principales (formato ASME QW-482 y similares en AWS B2.1 / D1.1)
 

@@ -86,7 +86,40 @@ Las normas tienen derechos de autor. Se compran en los sitios de cada organismo,
 
 ---
 
-## 5. Fuentes consultadas para este temario
+## 5. Tus PDF
+
+| PDF | Qué mirar | Capítulos |
+|---|---|---|
+| **Póster *Welded Joints and Symbols*** (American Welding Program / CWB Group) | «Basic Welding Symbols and Their Location Significance» (cada símbolo de un lado, del otro y de ambos) · «Supplementary Welding Symbols» · «Standard Location of the Elements of the Welding Symbol» (dónde va cada medida) · «Basic Types of Welded Joints» · «Finishing of Welds» (letras C, G, M, R, H) | 03 |
+| **Curso M381 *Welding Technology and Inspection Procedures – AWS D1.1*** (Jurandir Primo, PDHonline) | Págs. 9–16: tipos de junta y de ranura · 17–20: diseño de juntas · 21–26: posiciones en placa, filete y caño · 26–31: simbología · 37–44: métodos de inspección (VT, PT, MT, RT, UT) · 58–59: clasificación de electrodos · 60–66: ejemplos de WPS y PQR | 00, 02, 03, 07, 08 |
+
+Los dos están en inglés. El glosario del [capítulo 12](12-glosario.md) te ayuda con los términos.
+
+## 6. Tus videos
+
+Estos son los videos que juntaste. Desde este entorno no puedo abrir YouTube, así que no pude ver de qué trata cada uno, salvo el 16 (una prueba 6G con raíz 6010 y relleno 7018). En la versión web le podés asignar un capítulo a cada video, y después aparece al final de ese capítulo, en "Tus videos para este capítulo". Si me pasás el título o el tema de cada uno, los dejo ubicados de forma fija.
+
+<!-- tus-videos -->
+- [Video 1](https://youtu.be/dkZLWrGB7m4)
+- [Video 2](https://youtu.be/exSDjbasiek)
+- [Video 3](https://youtu.be/58ZzNef6nVE)
+- [Video 4](https://youtu.be/ZhEy8ULn1sI)
+- [Video 5](https://youtu.be/7Q3MDgSZWyc)
+- [Video 6](https://youtu.be/qzkGJP4Los0)
+- [Video 7](https://youtu.be/q9vvDXO7kiA)
+- [Video 8](https://youtu.be/Svoi1v_o5yI)
+- [Video 9](https://youtu.be/kYtA2MB1-WM)
+- [Video 10](https://youtu.be/S24WimvoND8)
+- [Video 11](https://youtu.be/Y86yVcAP9fE)
+- [Video 12](https://youtu.be/SN7IKPbsfWU)
+- [Video 13](https://youtu.be/D6IoqTC4ejY)
+- [Video 14](https://youtu.be/hgIa0sesWk8)
+- [Video 15](https://youtu.be/I8S-5dVaiF8)
+- [Video 16 · Prueba 6G con 6010 y 7018](https://youtu.be/T8ZGl5iK-JA)
+- [Video 17](https://youtu.be/aSoZ3r5eI_U)
+- [Video 18](https://youtu.be/Ywya1tvpAbw)
+
+## 7. Fuentes consultadas para este temario
 
 **Examen, certificación y códigos**
 

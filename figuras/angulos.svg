@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 226" role="img" aria-labelledby="FIGID-t"><title id="FIGID-t">Ángulo de trabajo y ángulo de avance</title><style>
+.f-bg{fill:var(--fig-bg,#ffffff)}
+.f-ln{fill:none;stroke:var(--ink,#18212a);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.f-dash{fill:none;stroke:var(--muted,#56636f);stroke-width:1;stroke-dasharray:4 3}
+.f-rip{fill:none;stroke:var(--muted,#56636f);stroke-width:.8}
+.f-mt{fill:var(--metal,#cdd5dc);stroke:var(--ink,#18212a);stroke-width:1.2;stroke-linejoin:round}
+.f-wd{fill:var(--weld,#f1cf9f);stroke:var(--ink,#18212a);stroke-width:1;stroke-linejoin:round}
+.f-wd2{fill:var(--weld2,#e6b07a);stroke:var(--ink,#18212a);stroke-width:1;stroke-linejoin:round}
+.f-wd3{fill:var(--weld3,#d69356);stroke:var(--ink,#18212a);stroke-width:1;stroke-linejoin:round}
+.f-hole{fill:var(--fig-bg,#ffffff);stroke:var(--ink,#18212a);stroke-width:1.2}
+.f-holeh{fill:var(--fig-bg,#ffffff);stroke:var(--heat,#94500e);stroke-width:2}
+.f-pore{fill:var(--fig-bg,#ffffff);stroke:var(--heat,#94500e);stroke-width:1.6}
+.f-ac{fill:none;stroke:var(--accent,#1d5a86);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.f-ht{fill:none;stroke:var(--heat,#94500e);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.f-defl{fill:none;stroke:var(--heat,#94500e);stroke-width:3;stroke-linecap:round}
+.f-defbox{fill:none;stroke:var(--heat,#94500e);stroke-width:1.8;stroke-dasharray:3 2}
+.f-tack{fill:none;stroke:var(--heat,#94500e);stroke-width:12}
+.f-zp{fill:none;stroke:var(--accent,#1d5a86);stroke-width:7}
+.f-zv{fill:none;stroke:var(--muted,#56636f);stroke-width:7}
+.f-zs{fill:none;stroke:var(--heat,#94500e);stroke-width:7}
+.f-sp{fill:none;stroke:var(--weld2,#e6b07a);stroke-width:10}
+.f-spw{fill:none;stroke:var(--heat,#94500e);stroke-width:10}
+.f-spm{fill:none;stroke:var(--weld2,#e6b07a);stroke-width:6}
+.f-el{fill:none;stroke:var(--ink,#18212a);stroke-width:5;stroke-linecap:round}
+.f-elt{fill:none;stroke:var(--heat,#94500e);stroke-width:5;stroke-linecap:round}
+.f-inkf{fill:var(--ink,#18212a)}
+.f-acf{fill:var(--accent,#1d5a86)}
+.f-htf{fill:var(--heat,#94500e)}
+.f-tx{fill:var(--ink,#18212a);font-family:var(--font-body,system-ui,sans-serif);font-size:12px;font-weight:600}
+.f-sm{fill:var(--muted,#56636f);font-family:var(--font-body,system-ui,sans-serif);font-size:11px}
+.f-hd{fill:var(--ink,#18212a);font-family:var(--font-display,system-ui,sans-serif);font-size:15px;font-weight:700;letter-spacing:.06em}
+.f-ach{fill:var(--accent,#1d5a86);font-family:var(--font-display,system-ui,sans-serif);font-size:13px;font-weight:700;letter-spacing:.05em}
+.f-hth{fill:var(--heat,#94500e);font-family:var(--font-display,system-ui,sans-serif);font-size:13px;font-weight:700;letter-spacing:.05em}
+</style><defs><marker id="FIGID-ak" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="f-inkf"/></marker><marker id="FIGID-aa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="f-acf"/></marker><marker id="FIGID-ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="f-htf"/></marker></defs><rect class="f-bg" x="0" y="0" width="360" height="226" rx="10"/><text x="85" y="22" class="f-ach" text-anchor="middle">ÁNGULO DE TRABAJO</text><text x="275" y="22" class="f-ach" text-anchor="middle">ÁNGULO DE AVANCE</text><polygon points="12,120 54.9,120 81,154 81,160 12,160" class="f-mt"/><polygon points="158,120 115.1,120 89,154 89,160 158,160" class="f-mt"/><line x1="85" y1="40" x2="85" y2="109" class="f-el" /><line x1="85" y1="109" x2="85" y2="117" class="f-elt" /><line x1="85" y1="124" x2="85" y2="160" class="f-dash" /><text x="85" y="180" class="f-tx" text-anchor="middle">90° en la ranura</text><text x="85" y="196" class="f-sm" text-anchor="middle">45° en filete (bisectriz)</text><rect x="196" y="150" width="150" height="18" class="f-mt"/><path d="M200 150 Q234 136 268 150 Z" class="f-wd" /><line x1="272" y1="148" x2="272" y2="68" class="f-dash" /><line x1="292.7" y1="70.7" x2="274.1" y2="140.3" class="f-el" /><line x1="274.1" y1="140.3" x2="272" y2="148" class="f-elt" /><path d="M272 108 A40 40 0 0 1 282.4 109.4" class="f-ac" /><text x="298" y="104" class="f-ach" text-anchor="start">10–20°</text><line x1="200" y1="178" x2="250" y2="178" class="f-ac" marker-end="url(#FIGID-aa)"/><text x="256" y="182" class="f-sm" text-anchor="start">avance</text><text x="196" y="202" class="f-sm" text-anchor="start">Arrastre: el electrodo apunta</text><text x="196" y="216" class="f-sm" text-anchor="start">hacia el cordón ya hecho</text></svg>

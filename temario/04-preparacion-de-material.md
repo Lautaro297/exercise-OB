@@ -72,6 +72,8 @@ Una raíz sana empieza en el bisel. **Con mala preparación, ni el mejor soldado
 
 ## 4. Biselado con amoladora (paso a paso)
 
+![Lo que buscás al biselar: 37,5°, talón parejo y luz correcta](../figuras/junta.svg)
+
 ### Cuánto bisel marcar
 
 El ancho del bisel, medido sobre la superficie exterior desde el extremo del caño, es:
@@ -100,6 +102,8 @@ Para placa de 10 mm con bisel de 30° (ranura de 60°): `(10 − 1,6) × 0,577 �
    - **Talón irregular = raíz irregular.** Donde el talón es grueso falta penetración. Donde es fino, se cae o perfora.
 5. **Limpieza:** dejá **metal brillante 25 mm** hacia afuera del bisel, por dentro y por fuera (con flap o cepillo). Sin óxido, cascarilla, pintura, aceite ni humedad.
 6. **Rebaba interior:** sacá el filo o rebaba de la cara interior con lima o flap, sin redondear el talón.
+
+[Ver en YouTube: biselar caño con amoladora](https://www.youtube.com/results?search_query=biselar+ca%C3%B1o+con+amoladora+37.5)
 
 > ✅ **Control final:** ángulo 35° a 40°, talón de 1,2 a 2,0 mm parejo en toda la vuelta, extremo a escuadra y zona limpia.
 
@@ -137,6 +141,8 @@ Truco clásico: apoyá los dos caños sobre un **perfil ángulo** puesto "en V" 
 
 ## 6. Punteado
 
+![Dónde van los puntos y cómo usar el electrodo como galga de luz](../figuras/punteado.svg)
+
 | Caño | Cantidad de puntos | Ubicación sugerida (reloj) | Largo de cada punto |
 |---|---|---|---|
 | 2" | 2–3 | 10, 2 (y 6 si hace falta) | 6–10 mm |
@@ -148,6 +154,8 @@ Truco clásico: apoyá los dos caños sobre un **perfil ángulo** puesto "en V" 
 - **Afilá ("feather") ambos extremos** de cada punto con el disco fino, dejándolos en rampa. Así, al llegar con la raíz, el empalme se funde sin escalón.
 - Revisá que ningún punto esté fisurado. Si lo está, **amolalo y rehacelo**.
 - **Puntos "puente"** (pequeñas planchuelas soldadas por fuera que unen ambos caños): **solo si el examen lo permite**. En la mayoría de las pruebas los puntos van **dentro del bisel**. Preguntá.
+
+[Ver en YouTube: armado y punteado de tubería](https://www.youtube.com/results?search_query=armado+y+punteado+de+tuber%C3%ADa+luz+de+ra%C3%ADz)
 
 ---
 
@@ -182,20 +190,15 @@ Truco clásico: apoyá los dos caños sobre un **perfil ángulo** puesto "en V" 
 - El soporte tiene que ser **rígido**: si vibra al apoyar la mano, no sirve.
 - Para placa (3G/4G), soldá una "oreja" de planchuela al cupón y abulonala o sujetala al brazo.
 
+[Ver en YouTube: soporte para practicar soldadura en posición](https://www.youtube.com/results?search_query=soporte+posicionador+para+practicar+soldadura+casero)
+
 ---
 
 ## 9. Cupones de placa
 
 ### Ranura con respaldo (tipo prueba AWS D1.1) ⚠️ verificar con la WPS o figura del examen
 
-```
-       |<-- 45° incluido (22,5° cada lado) -->|
-  ─────┐                                      ┌─────
-        \                                    /         chapa de 10 mm (3/8")
-         \                                  /
-  ────────┴─────── luz 6 mm (1/4") ────────┴────────
-  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓   respaldo 10 × 25 mm, bien pegado (sin luz entre chapa y respaldo)
-```
+![Cupón de placa de 10 mm con respaldo (tipo AWS D1.1)](../figuras/respaldo.svg)
 
 - Dos chapas de 10 × ~75–150 × ~150–200 mm, con bisel de 22,5° **sin talón** (filo), luz de 6 mm y respaldo de 10 × 25 mm.
 - Punteá el respaldo **por el lado de abajo y en los extremos**, de modo que **no quede luz** entre la chapa y el respaldo (si queda luz, la escoria se mete ahí).

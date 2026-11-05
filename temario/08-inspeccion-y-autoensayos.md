@@ -6,6 +6,8 @@
 
 ## 1. Inspección visual (lo primero, siempre)
 
+> 📄 **En tus PDF:** curso M381, págs. 37 y 38: inspección visual. Págs. 38 a 44: tintas penetrantes, partículas magnéticas, radiografía y ultrasonido.
+
 ### Herramientas
 
 - **Galga de filete** y **galga de soldadura multifunción** (tipo *Bridge Cam*), que mide sobremonta, socavación, desalineación y garganta.
@@ -41,14 +43,7 @@
 - **En el examen:** las ubica el inspector según el código. Para 5G y 6G suelen tomarse en zonas a 45° entre las horas del reloj, cubriendo sobrecabeza, vertical y plano ⚠️ (ASME QW-463.2, figura de D1.1).
 - **En tu práctica, sé más exigente:** cortá justo **en los empalmes de las 6 y de las 12**, y a las 3 y a las 9. Si los empalmes pasan, el resto también.
 
-```
-                   12  ← probeta en el CIERRE (empalme)
-             ┌─────────────┐
-       9  ←  │    caño     │  →  3        4 probetas de autoevaluación:
-             └─────────────┘                6, 12 (empalmes) y 3, 9 (verticales)
-                    6  ← probeta en el INICIO (empalme)
-     Marcá la hora con tiza ANTES de cortar, para saber de dónde salió cada probeta.
-```
+![Dónde cortar las probetas de autoevaluación](../figuras/probetas.svg)
 
 ---
 
@@ -75,16 +70,7 @@
 
 ### Dimensiones del dispositivo de referencia (acero tipo P-1 / A36, probeta de 10 mm) ⚠️ (ASME QW-466.1, D1.1)
 
-```
-              ┌───┐
-              │   │  ← EMBOLO (mandril): barra redonda de Ø 38 mm (1½"), es decir 4 × espesor
-              │   │
-              └─┬─┘
-       ═════════╧═════════  ← probeta (la cara a "traccionar" mirando hacia ABAJO)
-      ●                   ●
-     ( )                 ( )  ← apoyos: rodillos o barras redondas
-      └───── ≈ 60 mm ────┘     abertura del dado ≈ 60 mm (2⅜")
-```
+![Ensayo de doblado guiado y tipos de probeta](../figuras/doblado.svg)
 
 - Para **probetas más finas que 10 mm**, el émbolo es de **4 × espesor** de diámetro (por ejemplo, para t = 6 mm, émbolo de unos 24 mm).
 - Se dobla en **"U" a unos 180°**, hasta que la probeta pase entre los apoyos.
@@ -106,9 +92,14 @@
 - **D1.1:** ninguna abertura de más de 3 mm. La suma de las aberturas de entre 1 y 3 mm, como máximo 10 mm. Fisuras de esquina de hasta 6 mm (salvo que vengan de escoria o falta de fusión) ⚠️.
 - Usá la tabla 3 del [capítulo 07](07-defectos-causas-soluciones.md) para diagnosticar **por qué** se abrió.
 
+[Ver en YouTube: ensayo de doblado de probeta soldada](https://www.youtube.com/results?search_query=ensayo+de+doblado+probeta+soldadura)
+[Ver en YouTube (inglés): guided bend test](https://www.youtube.com/results?search_query=guided+bend+test+weld+coupon)
+
 ---
 
 ## 5. Nick-break (rotura con entalla), estilo API 1104
+
+![Ensayo de rotura con entalla (nick-break)](../figuras/nickbreak.svg)
 
 Es el ensayo **más barato y más rápido** para ver el interior de la soldadura. Usalo aunque no te vayan a tomar API.
 
@@ -121,6 +112,8 @@ Es el ensayo **más barato y más rápido** para ver el interior de la soldadura
    - **Escoria:** inclusiones chicas y separadas (API fija límites de profundidad y largo) ⚠️.
 
 > 💡 Una fractura **brillante y granulada** en toda la sección es buena señal. Las **zonas lisas, oscuras o con "escalones"** suelen ser falta de fusión o escoria.
+
+[Ver en YouTube (inglés): nick break test](https://www.youtube.com/results?search_query=nick+break+test+API+1104)
 
 ---
 
@@ -136,6 +129,8 @@ Te permite **ver las pasadas, la penetración y las líneas de fusión** en un c
 4. Enjuagá, secá y observá: vas a ver las **pasadas**, la **ZAC** y si **cada pasada se fundió con la pared y con la anterior**.
 
 > ⚠️ Manejá los químicos con cuidado, lejos de chicos y alimentos, y descartalos según las indicaciones del producto.
+
+[Ver en YouTube (inglés): macroataque de una soldadura](https://www.youtube.com/results?search_query=macro+etch+weld+test)
 
 ---
 

@@ -22,6 +22,8 @@ Mirá la chapa de características (la etiqueta) de tu soldadora y anotá:
 - **Bien:** el arco se mantiene con un sonido "rasposo" y cortante, y penetra.
 - **Mal:** el arco se corta cuando lo acortás, el electrodo se pega a cada rato o el arco "se apaga" al alargarlo apenas.
 
+[Ver en YouTube: electrodo 6010 con inversor](https://www.youtube.com/results?search_query=electrodo+6010+inversor)
+
 **Si tu máquina no corre 6010:**
 
 - **Plan A:** subí el arc force al máximo o probá el modo CEL si lo tiene.
@@ -71,6 +73,8 @@ Mirá la chapa de características (la etiqueta) de tu soldadora y anotá:
 | **18** | **Básico (bajo hidrógeno)** con polvo de hierro | AC / DC+ | Metal de soldadura tenaz y sano. **Relleno y presentación en caño** |
 | 24, 27, 28 | Con polvo de hierro (alta deposición) | Varias | Solo plano y horizontal. No se usan en caño |
 
+> 📄 **En tus PDF:** curso M381, págs. 58 y 59: clasificación de electrodos AWS y qué significa cada terminación (en inglés).
+
 ### Equivalencias de marcas habituales en Argentina
 
 | AWS | ESAB Conarco | Lincoln | Uso en este temario |
@@ -115,16 +119,7 @@ Son **puntos de partida**: después ajustás por máquina, posición, espesor y 
 
 **Ángulos** (se miden siempre respecto de la pieza):
 
-```
- ÁNGULO DE TRABAJO: visto de frente al cordón,              ÁNGULO DE AVANCE: visto de costado,
- respecto de la superficie.                                 respecto de la perpendicular.
-
-        \ │ /                                                   │  ╲ 10–20° de "arrastre" (drag)
-         \│/   90° en ranura (centrado)                         │   ╲    → el electrodo apunta hacia
-   ───────┴───────                                              │    ╲     el cordón ya hecho
-                                                         ───────┴─────── → sentido de avance
-        45° en filete (bisectriz)                     "empuje" (push) = apunta hacia adelante
-```
+![Ángulo de trabajo (de frente) y ángulo de avance (de costado)](../figuras/angulos.svg)
 
 - **Arrastre (drag):** el electrodo está inclinado hacia el cordón ya depositado. Es lo normal en plano, con 6010 descendente y con 7018 en general.
 - **Empuje (push):** el electrodo apunta hacia adelante. En la **raíz ascendente** del caño se trabaja casi perpendicular o con un leve ángulo hacia arriba, según la zona del reloj (capítulo 06).
@@ -172,3 +167,5 @@ Referencia de AWS D1.1 para electrodos de bajo hidrógeno ⚠️ (verificá la e
 - **E6010:** arranque por raspado ("como un fósforo") dentro del bisel o sobre el punto de armado.
 - **E7018:** el primer centímetro sale "frío" y con riesgo de **porosidad de arranque**. Técnica: **encendé 10 a 15 mm adelante** del punto de inicio, dentro de la junta, **volvé** al punto de arranque con arco corto y recién ahí empezá a avanzar. Así refundís la zona donde encendiste.
 - Practicá encender en un círculo de 5 mm dibujado con tiza. Es un ejercicio de 5 minutos por día que te ahorra muchos rechazos.
+
+[Ver en YouTube: cómo encender el arco con 7018](https://www.youtube.com/results?search_query=c%C3%B3mo+encender+el+arco+electrodo+7018)

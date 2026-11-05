@@ -31,19 +31,7 @@ Muchos soldadores quieren saltar directo al caño. **Error.** La placa te deja a
 
 ## 3. Movimientos (manipulación del electrodo)
 
-```
- Recto (stringer)   ─────────────►       Cordón angosto. Sobrecabeza, horizontal y presentación en 2G
-
- Tejido lateral     ╱╲╱╲╱╲╱╲╱╲►            Pausa en los costados, pasada rápida por el centro ("lento afuera, rápido al medio")
- (zigzag)
-
- Media luna         ⌒⌒⌒⌒⌒►               Curva hacia arriba en vertical ascendente (evita que el centro cuelgue)
-
- Triángulo / "Z"    ▷▷▷▷►                 Filetes 3F y relleno vertical: tres puntos de apoyo
-
- Latigueo (whip)    ─┐ ─┐ ─┐►             Avanza 3–6 mm (fuera del charco), vuelve al charco y pausa.
-                     └─ └─ └─            Típico del 6010 en raíz: controla el calor y el tamaño del "ojo"
-```
+![Movimientos del electrodo](../figuras/movimientos.svg)
 
 **Regla del tejido:** ancho máximo de unas **2,5 a 3 veces el diámetro del electrodo** (o lo que diga la WPS). Más ancho, y el charco se enfría en los costados y aparecen escoria y falta de fusión.
 
@@ -76,6 +64,9 @@ Cada ejercicio tiene un **criterio para pasar al siguiente**. No avances si no l
 - **Prueba de rotura de filete** (*fillet break test*): soldá una T de un solo lado, después poné la placa en la morsa y **doblá el alma hacia el cordón** con maza hasta que rompa. La fractura tiene que mostrar **fusión hasta la raíz** (el vértice) y no tener porosidad ni escoria.
 - **Criterio:** catetos parejos (± 1 mm, medidos con galga), perfil plano o levemente convexo, **sin socavación** y fractura sana.
 
+[Ver en YouTube: filete vertical 3F con 7018](https://www.youtube.com/results?search_query=filete+vertical+3F+7018)
+[Ver en YouTube (inglés): prueba de rotura de filete](https://www.youtube.com/results?search_query=fillet+break+test+welding)
+
 ### E4: Ranura con respaldo, 10 mm (E7018), en 2G, 3G y 4G
 
 Es el **cupón de placa típico de AWS D1.1**. Hacé al menos **tres cupones aprobados (visual + doblado) en cada posición** antes de seguir.
@@ -96,6 +87,10 @@ Es el **cupón de placa típico de AWS D1.1**. Hacé al menos **tres cupones apr
 | **3G** (vertical ascendente) | 90° | De 0–10° hacia arriba a perpendicular | **Tejido lateral o "Z"**, con pausa en los costados | "Formá un estante": cada vaivén apoya sobre el anterior. Si el centro cuelga, andá más rápido por el centro o bajá 5 A |
 | **4G** (sobrecabeza) | 90° | Arrastre de 5–10° | **Cordones rectos** o tejido muy corto | **Arco muy corto** y velocidad constante. Charco chico. Si gotea, está muy caliente o vas muy lento |
 
+[Ver en YouTube: placa 3G con 7018 y respaldo](https://www.youtube.com/results?search_query=placa+3G+7018+con+respaldo+prueba)
+[Ver en YouTube: placa 4G sobrecabeza con 7018](https://www.youtube.com/results?search_query=soldadura+4G+sobrecabeza+7018+placa)
+[Ver en YouTube: placa 2G con 7018](https://www.youtube.com/results?search_query=soldadura+2G+7018+placa+con+respaldo)
+
 ### E5: Raíz abierta en placa (E6010), en 3G, 4G y 2G
 
 Es el **puente entre la placa y el caño**. Acá aprendés a leer el **"ojo de cerradura"** (*keyhole*).
@@ -105,13 +100,7 @@ Es el **puente entre la placa y el caño**. Acá aprendés a leer el **"ojo de c
 
 **El ojo de cerradura**
 
-```
-        ╔═══════╗        ← charco (metal ya fundido, detrás)
-        ║  ●  ←───────── "ojo": pequeño agujero en la punta del charco donde el arco
-        ╚═══════╝         derrite ambos talones y pasa al otro lado
-       ‖       ‖
-     talón A  talón B
-```
+![El ojo de cerradura en la raíz abierta](../figuras/keyhole.svg)
 
 - **Tamaño del ojo:** más o menos **igual al diámetro del electrodo, o un poco más**. Mantenelo constante.
 - **Sonido:** cuando penetra se escucha un **"chisporroteo" o soplido** detrás de la junta, como un "fssss" constante. Si el arco "zumba" de golpe y el sonido se apaga, no está pasando.
@@ -123,6 +112,8 @@ Es el **puente entre la placa y el caño**. Acá aprendés a leer el **"ojo de c
 - Penetración del lado de atrás pareja, de **0,5 a 2 mm** de alto, sin agujeros y con ambos talones fundidos (sin "rayas" de talón sin fundir).
 - Cara de la raíz sin socavación excesiva en los costados (amolable).
 - **Doblado de raíz** aprobado (capítulo 08).
+
+[Ver en YouTube: raíz abierta con 6010 en placa](https://www.youtube.com/results?search_query=ra%C3%ADz+abierta+6010+placa+3G)
 
 > 💡 Cuando domines la raíz abierta en placa, en 3G **y** en 4G, ya tenés la mitad del caño 5G resuelta: la parte de abajo del caño se comporta como 4G, y los costados como 3G.
 

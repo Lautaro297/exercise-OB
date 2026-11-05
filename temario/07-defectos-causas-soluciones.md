@@ -2,6 +2,12 @@
 
 "Discontinuidad" es cualquier interrupción en la soldadura. Se convierte en **"defecto"** cuando supera el límite del código. En el examen no te preguntan el nombre: **te rechazan el cupón**. Aprendé a reconocer cada una y a saber por qué apareció.
 
+![Defectos más comunes en corte transversal (el defecto, en naranja)](../figuras/defectos.svg)
+
+> 📄 **En tus PDF:** curso M381, págs. 37 a 44: inspección y ensayos no destructivos, con los defectos que detecta cada método.
+
+[Ver en YouTube: defectos de soldadura: causas y soluciones](https://www.youtube.com/results?search_query=defectos+de+soldadura+causas+y+soluciones)
+
 ---
 
 ## 1. Tabla maestra (SMAW, caño y placa)

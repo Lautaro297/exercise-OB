@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 312" role="img" aria-labelledby="FIGID-t"><title id="FIGID-t">El ojo de cerradura en la raíz (vista desde afuera)</title><style>
+.f-bg{fill:var(--fig-bg,#ffffff)}
+.f-ln{fill:none;stroke:var(--ink,#18212a);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.f-dash{fill:none;stroke:var(--muted,#56636f);stroke-width:1;stroke-dasharray:4 3}
+.f-rip{fill:none;stroke:var(--muted,#56636f);stroke-width:.8}
+.f-mt{fill:var(--metal,#cdd5dc);stroke:var(--ink,#18212a);stroke-width:1.2;stroke-linejoin:round}
+.f-wd{fill:var(--weld,#f1cf9f);stroke:var(--ink,#18212a);stroke-width:1;stroke-linejoin:round}
+.f-wd2{fill:var(--weld2,#e6b07a);stroke:var(--ink,#18212a);stroke-width:1;stroke-linejoin:round}
+.f-wd3{fill:var(--weld3,#d69356);stroke:var(--ink,#18212a);stroke-width:1;stroke-linejoin:round}
+.f-hole{fill:var(--fig-bg,#ffffff);stroke:var(--ink,#18212a);stroke-width:1.2}
+.f-holeh{fill:var(--fig-bg,#ffffff);stroke:var(--heat,#94500e);stroke-width:2}
+.f-pore{fill:var(--fig-bg,#ffffff);stroke:var(--heat,#94500e);stroke-width:1.6}
+.f-ac{fill:none;stroke:var(--accent,#1d5a86);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.f-ht{fill:none;stroke:var(--heat,#94500e);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.f-defl{fill:none;stroke:var(--heat,#94500e);stroke-width:3;stroke-linecap:round}
+.f-defbox{fill:none;stroke:var(--heat,#94500e);stroke-width:1.8;stroke-dasharray:3 2}
+.f-tack{fill:none;stroke:var(--heat,#94500e);stroke-width:12}
+.f-zp{fill:none;stroke:var(--accent,#1d5a86);stroke-width:7}
+.f-zv{fill:none;stroke:var(--muted,#56636f);stroke-width:7}
+.f-zs{fill:none;stroke:var(--heat,#94500e);stroke-width:7}
+.f-sp{fill:none;stroke:var(--weld2,#e6b07a);stroke-width:10}
+.f-spw{fill:none;stroke:var(--heat,#94500e);stroke-width:10}
+.f-spm{fill:none;stroke:var(--weld2,#e6b07a);stroke-width:6}
+.f-el{fill:none;stroke:var(--ink,#18212a);stroke-width:5;stroke-linecap:round}
+.f-elt{fill:none;stroke:var(--heat,#94500e);stroke-width:5;stroke-linecap:round}
+.f-inkf{fill:var(--ink,#18212a)}
+.f-acf{fill:var(--accent,#1d5a86)}
+.f-htf{fill:var(--heat,#94500e)}
+.f-tx{fill:var(--ink,#18212a);font-family:var(--font-body,system-ui,sans-serif);font-size:12px;font-weight:600}
+.f-sm{fill:var(--muted,#56636f);font-family:var(--font-body,system-ui,sans-serif);font-size:11px}
+.f-hd{fill:var(--ink,#18212a);font-family:var(--font-display,system-ui,sans-serif);font-size:15px;font-weight:700;letter-spacing:.06em}
+.f-ach{fill:var(--accent,#1d5a86);font-family:var(--font-display,system-ui,sans-serif);font-size:13px;font-weight:700;letter-spacing:.05em}
+.f-hth{fill:var(--heat,#94500e);font-family:var(--font-display,system-ui,sans-serif);font-size:13px;font-weight:700;letter-spacing:.05em}
+</style><defs><marker id="FIGID-ak" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="f-inkf"/></marker><marker id="FIGID-aa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="f-acf"/></marker><marker id="FIGID-ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="f-htf"/></marker></defs><rect class="f-bg" x="0" y="0" width="360" height="312" rx="10"/><rect x="10" y="40" width="340" height="56" class="f-mt"/><rect x="10" y="144" width="340" height="56" class="f-mt"/><path d="M10 90 L196 90 Q212 120 196 150 L10 150 Z" class="f-wd" /><path d="M36 92 Q46 120 36 148" class="f-rip" /><path d="M58 92 Q68 120 58 148" class="f-rip" /><path d="M80 92 Q90 120 80 148" class="f-rip" /><path d="M102 92 Q112 120 102 148" class="f-rip" /><path d="M124 92 Q134 120 124 148" class="f-rip" /><path d="M146 92 Q156 120 146 148" class="f-rip" /><path d="M168 92 Q178 120 168 148" class="f-rip" /><path d="M190 92 Q200 120 190 148" class="f-rip" /><ellipse cx="220" cy="120" rx="30" ry="32" class="f-wd2" /><ellipse cx="252" cy="120" rx="10" ry="28" class="f-hole" /><line x1="290" y1="120" x2="340" y2="120" class="f-ac" marker-end="url(#FIGID-aa)"/><text x="315" y="112" class="f-sm" text-anchor="middle">avance</text><line x1="252" y1="93" x2="300" y2="34" class="f-dash" /><text x="350" y="28" class="f-tx" text-anchor="end">ojo de cerradura</text><line x1="212" y1="92" x2="176" y2="34" class="f-dash" /><text x="180" y="28" class="f-tx" text-anchor="end">charco (líquido)</text><text x="100" y="124" class="f-tx" text-anchor="middle">cordón de raíz</text><text x="340" y="90" class="f-sm" text-anchor="end">talón</text><text x="340" y="162" class="f-sm" text-anchor="end">talón</text><rect x="15" y="222" width="90" height="12" class="f-mt"/><rect x="15" y="258" width="90" height="12" class="f-mt"/><ellipse cx="60" cy="246" rx="7" ry="14" class="f-hole" /><text x="60" y="288" class="f-tx" text-anchor="middle">Bien</text><text x="60" y="302" class="f-sm" text-anchor="middle">1–1,5 × Ø, funde los dos</text><rect x="135" y="222" width="90" height="12" class="f-mt"/><rect x="135" y="258" width="90" height="12" class="f-mt"/><ellipse cx="180" cy="246" rx="14" ry="20" class="f-hole" /><text x="180" y="288" class="f-tx" text-anchor="middle">Muy grande</text><text x="180" y="302" class="f-sm" text-anchor="middle">se va a perforar</text><rect x="255" y="222" width="90" height="12" class="f-mt"/><rect x="255" y="258" width="90" height="12" class="f-mt"/><ellipse cx="300" cy="246" rx="3" ry="5" class="f-hole" /><text x="300" y="288" class="f-tx" text-anchor="middle">Cerrado</text><text x="300" y="302" class="f-sm" text-anchor="middle">no penetra</text></svg>

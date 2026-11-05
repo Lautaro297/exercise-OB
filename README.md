@@ -19,7 +19,8 @@
 ## Versión para el celular
 
 Todo el temario está armado como una sola página web, con índice, letra regulable y modo oscuro: <https://claude.ai/artifact/VkTWgc9AEDBf5sWRsUv3nQ> (privada, solo la abre el dueño de la cuenta).
-Si editás los capítulos, regenerala con `python3 herramientas/generar_pagina.py salida.html` (requiere `pip install markdown==3.7`).
+Incluye diagramas propios (carpeta `figuras/`), botones para ver cada técnica en video y la lista de tus videos para asignarlos a cada capítulo.
+Si editás los capítulos, regenerala con `python3 herramientas/generar_figuras.py` y después `python3 herramientas/generar_pagina.py salida.html` (requiere `pip install markdown==3.7`).
 
 ## Cómo usar este temario
 

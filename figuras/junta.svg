@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 236" role="img" aria-labelledby="FIGID-t"><title id="FIGID-t">Partes de la junta en V preparada</title><style>
+.f-bg{fill:var(--fig-bg,#ffffff)}
+.f-ln{fill:none;stroke:var(--ink,#18212a);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.f-dash{fill:none;stroke:var(--muted,#56636f);stroke-width:1;stroke-dasharray:4 3}
+.f-rip{fill:none;stroke:var(--muted,#56636f);stroke-width:.8}
+.f-mt{fill:var(--metal,#cdd5dc);stroke:var(--ink,#18212a);stroke-width:1.2;stroke-linejoin:round}
+.f-wd{fill:var(--weld,#f1cf9f);stroke:var(--ink,#18212a);stroke-width:1;stroke-linejoin:round}
+.f-wd2{fill:var(--weld2,#e6b07a);stroke:var(--ink,#18212a);stroke-width:1;stroke-linejoin:round}
+.f-wd3{fill:var(--weld3,#d69356);stroke:var(--ink,#18212a);stroke-width:1;stroke-linejoin:round}
+.f-hole{fill:var(--fig-bg,#ffffff);stroke:var(--ink,#18212a);stroke-width:1.2}
+.f-holeh{fill:var(--fig-bg,#ffffff);stroke:var(--heat,#94500e);stroke-width:2}
+.f-pore{fill:var(--fig-bg,#ffffff);stroke:var(--heat,#94500e);stroke-width:1.6}
+.f-ac{fill:none;stroke:var(--accent,#1d5a86);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.f-ht{fill:none;stroke:var(--heat,#94500e);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.f-defl{fill:none;stroke:var(--heat,#94500e);stroke-width:3;stroke-linecap:round}
+.f-defbox{fill:none;stroke:var(--heat,#94500e);stroke-width:1.8;stroke-dasharray:3 2}
+.f-tack{fill:none;stroke:var(--heat,#94500e);stroke-width:12}
+.f-zp{fill:none;stroke:var(--accent,#1d5a86);stroke-width:7}
+.f-zv{fill:none;stroke:var(--muted,#56636f);stroke-width:7}
+.f-zs{fill:none;stroke:var(--heat,#94500e);stroke-width:7}
+.f-sp{fill:none;stroke:var(--weld2,#e6b07a);stroke-width:10}
+.f-spw{fill:none;stroke:var(--heat,#94500e);stroke-width:10}
+.f-spm{fill:none;stroke:var(--weld2,#e6b07a);stroke-width:6}
+.f-el{fill:none;stroke:var(--ink,#18212a);stroke-width:5;stroke-linecap:round}
+.f-elt{fill:none;stroke:var(--heat,#94500e);stroke-width:5;stroke-linecap:round}
+.f-inkf{fill:var(--ink,#18212a)}
+.f-acf{fill:var(--accent,#1d5a86)}
+.f-htf{fill:var(--heat,#94500e)}
+.f-tx{fill:var(--ink,#18212a);font-family:var(--font-body,system-ui,sans-serif);font-size:12px;font-weight:600}
+.f-sm{fill:var(--muted,#56636f);font-family:var(--font-body,system-ui,sans-serif);font-size:11px}
+.f-hd{fill:var(--ink,#18212a);font-family:var(--font-display,system-ui,sans-serif);font-size:15px;font-weight:700;letter-spacing:.06em}
+.f-ach{fill:var(--accent,#1d5a86);font-family:var(--font-display,system-ui,sans-serif);font-size:13px;font-weight:700;letter-spacing:.05em}
+.f-hth{fill:var(--heat,#94500e);font-family:var(--font-display,system-ui,sans-serif);font-size:13px;font-weight:700;letter-spacing:.05em}
+</style><defs><marker id="FIGID-ak" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="f-inkf"/></marker><marker id="FIGID-aa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="f-acf"/></marker><marker id="FIGID-ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="f-htf"/></marker></defs><rect class="f-bg" x="0" y="0" width="360" height="236" rx="10"/><polygon points="14,62 94.9,62 167,156 167,172 14,172" class="f-mt"/><polygon points="346,62 265.1,62 193,156 193,172 346,172" class="f-mt"/><line x1="167" y1="156" x2="167" y2="84" class="f-dash" /><path d="M167 104 A52 52 0 0 0 135.3 114.7" class="f-ac" /><text x="150" y="100" class="f-ach" text-anchor="middle">37,5°</text><text x="180" y="44" class="f-tx" text-anchor="middle">ángulo de ranura 75°</text><line x1="28" y1="62" x2="28" y2="172" class="f-ln" /><line x1="22" y1="62" x2="34" y2="62" class="f-ln" /><line x1="22" y1="172" x2="34" y2="172" class="f-ln" /><text x="36" y="121" class="f-tx" text-anchor="start">t (pared)</text><line x1="167" y1="186" x2="193" y2="186" class="f-ac" /><line x1="167" y1="180" x2="167" y2="192" class="f-ac" /><line x1="193" y1="180" x2="193" y2="192" class="f-ac" /><text x="180" y="205" class="f-tx" text-anchor="middle">luz 2,4–3,2 mm</text><line x1="195" y1="164" x2="262" y2="194" class="f-dash" /><text x="266" y="199" class="f-tx" text-anchor="start">talón 1,6 mm</text><line x1="231.1" y1="109" x2="300" y2="52" class="f-dash" /><text x="346" y="48" class="f-tx" text-anchor="end">cara del bisel</text><text x="16" y="54" class="f-sm" text-anchor="start">superficie exterior</text><text x="16" y="190" class="f-sm" text-anchor="start">superficie interior</text><text x="180" y="226" class="f-sm" text-anchor="middle">Proporciones aprox. de un caño 6&quot; Sch 80 (pared 11 mm)</text></svg>
